@@ -38,3 +38,9 @@ INSERT INTO quartos (tipo, numero) VALUES
 ('Quarto Casal Master', 04),
 ('Duplo Solteiro Master', 12),
 ('Dormitorio Standard', 30);
+
+INSERT INTO reservas (id_hospede, id_quarto, datainicio, datatermino, hora_reserva) VALUES 
+(1,1, '2024-12-23', '2024-12-28', '05:24'),
+(2,2, '2024-12-26', '2024-12-28', '17:53'),
+(3,3, '2024-12-30', '2025-01-05', '16:19'),
+(3,3, '2025-06-20', '2025-06-29', '00:01');
