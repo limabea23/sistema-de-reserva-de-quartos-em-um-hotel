@@ -1,7 +1,5 @@
 CREATE DATABASE reservaquartos;
 
-\c reservaquartos;
-
 CREATE TABLE hospedes (
     id_hospede SERIAL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -24,3 +22,13 @@ CREATE TABLE reservas (
     CONSTRAINT fk_hospede FOREIGN KEY (id_hospede) REFERENCES hospedes(id_hospede),
     CONSTRAINT fk_reserva FOREIGN KEY (id_reserva) REFERENCES reservas(id_reserva)
 );
+
+INSERT INTO hospedes (nome, email) VALUES
+('John B. Routledge', 'johnroutledg@gmail.com'),
+('Sarah Cameron', 'sarahc@gmail.com'),
+('Kiara Carrera', 'carrerakiara@gmail.com'),
+('Pope Heyward', 'heypope@gmail.com'),
+('JJ Maybank', 'jmayjbank@gmail'),
+('Cleo', 'cleopogue@gmail.com'),
+('Rafe Cameron', 'rafecameron@gmail.com'),
+('Topper', 'topperkook@gmail.com');
