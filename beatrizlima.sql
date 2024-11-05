@@ -32,3 +32,9 @@ INSERT INTO hospedes (nome, email) VALUES
 ('Cleo', 'cleopogue@gmail.com'),
 ('Rafe Cameron', 'rafecameron@gmail.com'),
 ('Topper', 'topperkook@gmail.com');
+
+INSERT INTO quartos (tipo, numero) VALUES
+('Quarto Solteiro Standard', 17),
+('Quarto Casal Master', 04),
+('Duplo Solteiro Master', 12),
+('Dormitorio Standard', 30);
